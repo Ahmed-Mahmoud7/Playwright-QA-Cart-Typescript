@@ -29,17 +29,16 @@ export default class LoginPage {
 
     async loginPageLoad (){
         await this.page.goto('/login')
-        
 
     }
-    async enterUserName (){
-        await this.page.waitForSelector(this.userNameInput);
-        await this.page.fill(this.userNameInput, '')
+    async enterUserName (username: string) {
+         await this.page.waitForSelector(this.userNameInput);
+         await this.page.fill(this.userNameInput, username)
 
     }
-    async enterPassword (){
+    async enterPassword (password: string) {
         await this.page.waitForSelector(this.PasswordInput);
-        await this.page.fill(this.PasswordInput, '')
+        await this.page.fill(this.PasswordInput, password)
 
     }
 
