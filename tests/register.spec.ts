@@ -3,7 +3,7 @@ import {test, expect} from '@playwright/test';
 import RegisterPage from '../pages/RegisterPage'
 import TodoPage from '../pages/ToDoPage';
 
-test.describe('Registeration test suite', () => {
+test.describe('Registeration test suite @Smoke', () => {
     
     test('should be able to register to the todo wensite', async ({page}) => {
     const registerPage = new RegisterPage(page) 

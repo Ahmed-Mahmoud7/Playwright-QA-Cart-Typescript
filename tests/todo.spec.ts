@@ -51,7 +51,7 @@ test.describe('Todo lists test suites', () => {
   
   })})
 
-test('Add new tod list', async ({page, request}) => {
+test('Add new tod list @Smoke', async ({page, request}) => {
 
    // Sign up a new user 
     await  page.goto('/signup');

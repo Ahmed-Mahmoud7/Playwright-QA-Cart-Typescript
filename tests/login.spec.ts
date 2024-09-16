@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import LoginPage from '../pages/LoginPage';
 import ToDoPage from '../pages/ToDoPage';
 
-test.describe('Login test suites', () => {
+test.describe('Login test suites @Regression', () => {
     test('should be able to login successfully', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const todoPage = new ToDoPage(page);
