@@ -24,7 +24,7 @@ export default defineConfig({
   reporter: [
     ['allure-playwright'], 
     ['html']
-  ]
+  ],
   
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
